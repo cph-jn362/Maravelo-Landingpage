@@ -1,0 +1,72 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #392C2C;
+}
+
+p{
+    color: white;
+    font-family: Modern Sans;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.footer-description{
+    color: black;
+    font-size: 15px;
+}
+
+hr{
+    color: white;
+}
+
+.hr-footer{
+    color: black;
+}
+
+h1{
+    color: white;
+    font-family: New standard;
+    font-size: 50px;
+}
+
+h5{
+    color: black;
+    font-family: Modern Sans;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.nav-link{
+    font-family: Modern sans;
+    font-weight: lighter;
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+.rød-knap{
+    background-color: #B41D1F;
+    color: white;
+    font-family: Modern Sans;
+    font-weight: lighter;
+}
+
+.grøn-knap{
+    background-color: #6BA742;
+    color: white;
+    font-family: Modern Sans;
+    font-weight: lighter;
+}
+
+.karrusel{
+    background-color: grey;
+    height: 700px;
+    width: auto;
+}
+
+.copyright{
+    background-color: #CBCBCB;
+    font-size: 10px;
+}
