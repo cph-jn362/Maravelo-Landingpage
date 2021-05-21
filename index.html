@@ -10,29 +10,40 @@
     
     <!-- Vores eget stylesheet -->
     <link rel="stylesheet" href="styles.css">
-    <title>Maravelo | Landingpage</title>
+    <title>Maravelo elcykler | Landingpage</title>
 </head>
 <body>
-          <!-- Navigations bar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-             <a class="navbar-brand p-3" href="#sektion1"><img src="images/maravelo-logo.png" alt="maravelo logo"></a>
-             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  
+  <div class="header p-3" id="sektion1">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</div>
+          
+        <!-- Navigations bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+             <a class="navbar-brand p-3 fade-in-transition" href="#sektion1"><img src="images/maravelo-logo.png" alt="maravelo | elcykel forretning"></a>
+             <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
              </button>
              <div class="container">
              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                <ul class="navbar-nav">
                  <li class="nav-item">
-                   <a class="nav-link" href="#sektion2">El-cykler</a>
+                   <a class="nav-link fade-in-transition" href="#sektion2">Elcykler</a>
                  </li>
                  <li class="nav-item">
-                   <a class="nav-link" href="#sektion3">Tilmeld testkørsel</a>
+                   <a class="nav-link fade-in-transition" href="#sektion3">Tilmeld testkørsel</a>
                  </li>
                  <li class="nav-item">
-                   <a class="nav-link" href="#">Besøg Maravelo</a>
+                  <a class="nav-link fade-in-transition" href="#sektion4">Leasing</a>
+                </li>
+                 <li class="nav-item">
+                   <a class="nav-link fade-in-transition" href="#sektion5">Besøg Maravelo</a>
                  </li>
                  <li class="nav-item">
-                    <a class="nav-link" href="#">Om os</a>
+                    <a class="nav-link fade-in-transition" href="#sektion6">Om os</a>
                   </li>
                </ul>
              </div>
@@ -40,58 +51,140 @@
          </nav>
 
          <!-- Fotokarrusel/animeret videosekvens -->
-         <div class="karrusel" id="sektion1"> </div>
+         <div class="embed-responsive embed-responsive-16by9 karrusel">  
+          <iframe class="embed-responsive-item" src="videos/reklamevideo.mp4" allowfullscreen width="100%" height="720px"></iframe>
+        </div>
+        
 
 
 
-         <!-- El-cykel sektionen-->
-         <div id="sektion2"></div>
-         <div class="container el-cykel" >
-             <div class="row">
-                 <div class="col-lg-6 mt-5">
-                    <h1 class="mt-4">EL-CYKLER</h1>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <div class="col-sm-4">
-                        <button class="btn rød-knap">Læs mere her</button>
-                    </div>  
-                </div> 
-     
-            </div>    
-         </div>
+         <!-- Elcykel sektionen-->
+
+         <div class="container elcykel" id="sektion2">
+           <div class="row">
+              <div class="col-lg-6 mt-5">
+                <h1 class="mt-5 pt-5">ELCYKLER</h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="col-sm-4">
+                  <a href="https://maravelo.dk/shop" target="_blank" class="btn rød-knap fade-in-rød-btn-transition">Læs mere her</a>
+                </div>  
+            </div>
+            <div class="col-lg-6 gul-cykel mt-17">
+              <img src="images/gul-cykel.png" alt="gul elcykel" width="80%">
+             </div>
+      </div>   
+    </div>
+
 
         <!-- Testkørsel sektionen-->
-         <div class="container testkørsel">
-             <div class="row">
-                 <div class="col-lg-6 mt-5 mb-5" id="sektion3">
-                    <h1 class="mt-4">TILMELD TESTKØRSEL</h1>
+         <div class="container testkørsel" id="sektion3">
+             <div class="row justify-content-end">
+              <div class="col-lg-6 order-lg-12 order-sm-2 order-2 rød-cykel mt-17">
+                <img src="images/rød-cykel.png" alt="rød elcykel" width="80%">
+               </div>
+               <div class="col-lg-6 order-lg-2 order-sm-12 order-12 order-12 mt-5">
+                <form action="action_page.php">
+              
+                    <h1 class="mt-5 pt-5">TILMELDING</h1>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <div class="col-sm-4">
-                            <button class="btn grøn-knap">Læs mere her</button>
-                          </div> 
-                    </div>   
+                    <p class="mb-4">Meld dig til her for en gratis prøvetur!</p>
+                
+                
+                    <label for="navn"><b>Navn</b></label>
+                    <input type="text" name="navn" required>
+                
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" name="email" required>
+                
+                    <label for="tlf"><b>Telefon</b></label>
+                    <input type="text" name="tlf" required>
+                
+                    <div class="clearfix">
+                      <button type="button" class="rød-knap btn-tilmelding fade-in-rød-btn-transition me-3">Afbryd</button>
+                      <button type="submit" class="grøn-knap btn-tilmelding fade-in-grøn-btn-transition">Tilmeld</button>
+                    </div>
+                  </div> 
             </div>    
          </div>
+
+         
+        <!-- Leasing sektionen-->
+        <div class="container leasing" id="sektion4">
+          <div class="row">
+              <div class="col-lg-6 mt-5">
+                 <h1 class="mt-5 pt-5">LEASING</h1>
+                 <hr>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                     <div class="col-sm-4">
+                      <a href="https://maravelo.dk/ridesmile" target="_blank" class="btn rød-knap fade-in-rød-btn-transition">Læs mere her</a>
+                       </div> 
+                 </div> 
+                 <div class="col-lg-6 penge-sedler mt-10">
+                  <img src="images/penge-ikon.png" alt="penge ikon" width="80%">
+                 </div>  
+         </div>    
+      </div>
+
+        <!-- Besøg sektionen-->
+        <div class="container besøg" id="sektion5">
+          <div class="row justify-content-end">
+            <div class="col-lg-6 order-lg-12 order-sm-2 order-2 hus mt-15">
+              <img src="images/hus-ikon.png" alt="elcykel butik" width="80%">
+             </div> 
+              <div class="col-lg-6 order-lg-2 order-sm-12 order-12 mt-5">
+                 <h1 class="mt-5 pt-5">BESØG MARAVELO</h1>
+                 <hr>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                     <div class="col-sm-4">
+                      <a href="https://maravelo.dk/testk-r#Maravelo-adresser" target="_blank" class="btn grøn-knap fade-in-grøn-btn-transition">Læs mere her</a>
+                       </div> 
+                 </div>   
+         </div>    
+      </div>
+
+
+        <!-- Om os sektionen-->
+        <div class="container om-os" id="sektion6">
+          <div class="row">
+              <div class="col-lg-6 mt-5 mb-5">
+                 <h1 class="mt-5 pt-5">OM OS</h1>
+                 <hr>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                     <div class="col-sm-4 mb-5">
+                      <a href="https://maravelo.dk/wearemaravelo" target="_blank" class="btn rød-knap fade-in-rød-btn-transition">Læs mere her</a>
+                       </div> 
+                 </div>
+                 <div class="col-lg-6 person mt-10 mb-5">
+                  <img src="images/mand-ikon.png" alt="medarbejder" width="80%">
+                 </div>     
+            </div>    
+      </div>
+
 
 
 
   <!-- Footer -->
   <footer class="text-center text-lg-start bg-light">
-
-    <!--Grid column-->
-
       <div class="container">
-        <div class="row">
-          <div class="col-lg-3 mt-5">
+        <div class="row justify-content-between">
+          <div class="col-lg-2 col-sm-3 col-5 mt-5 mb-5">
           <h5 class="text-uppercase">kontakt</h5>
           <hr class="hr-footer">
             <ul class="list-unstyled">
@@ -100,13 +193,13 @@
               </li>
             </ul>
             </div>
-            <div class="col-lg-3 mt-5">
-                <h5 class="text-uppercase">Selskab</h5>
+            <div class="col-lg-2 col-sm-2 col-5 mt-5">
+              <a href="https://maravelo.dk/" target="_blank"><h5 class="text-uppercase fade-in-transition">Maravelo</h5></a>
             </div>
-            <div class="col-lg-6 mt-5">
-               <img src="images/facebook-logo.png" alt="facebook logo" width="5%">
-               <img src="images/instagram-logo.png" alt="instagram logo"  width="5%">
-               <img src="images/youtube-logo.png" alt="youtube logo"  width="5%">
+            <div class="col-lg-2 col-sm-3 col-12 mt-5 mb-5">
+              <a href="https://www.facebook.com/mymaravelo/" target="_blank" class="social-medie-ikon fade-in-transition"><img src="images/facebook-logo.png" alt="facebook logo" width="15%"></a> 
+              <a href="https://www.instagram.com/maravelo.eu/?hl=da" target="_blank" class="social-medie-ikon fade-in-transition"><img src="images/instagram-logo.png" alt="instagram logo"  width="15%"></a> 
+              <a href="https://www.youtube.com/channel/UClc_JPw4MoMq8nz-RBCwXEg" target="_blank" class="social-medie-ikon fade-in-transition"><img src="images/youtube-logo.png" alt="youtube logo"  width="15%"></a> 
             </div>
           </div>
         </div>
@@ -130,7 +223,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+    <!-- 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     -->
