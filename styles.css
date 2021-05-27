@@ -13,7 +13,7 @@ body{
 
 p{
     color: white;
-    font-family: Modern Sans;
+    font-family: Modern Sans, Arial, sans-serif;
     font-weight: lighter;
     font-size: 20px;
 }
@@ -42,19 +42,19 @@ hr{
 
 h1{
     color: white;
-    font-family: New standard;
+    font-family: New standard, Helvetica, sans-serif;
     font-size: 50px;
 }
 
 h5{
     color: black;
-    font-family: Modern Sans;
+    font-family: Modern Sans, Arial, sans-serif;
     font-size: 22px;
     font-weight: lighter;
 }
 
 .nav-link{
-    font-family: Modern sans;
+    font-family: Modern sans, Arial, sans-serif;
     font-weight: lighter;
     font-size: 18px;
     margin-left: 15px;
@@ -64,7 +64,7 @@ h5{
 .rød-knap{
     background-color: #B41D1F;
     color: white;
-    font-family: Modern Sans;
+    font-family: Modern Sans, Arial, sans-serif;
     font-weight: lighter;
     box-shadow: #161616 1px 1px 8px;
     padding: 10px;
@@ -73,7 +73,7 @@ h5{
 .grøn-knap{
     background-color: #6BA742;
     color: white;
-    font-family: Modern Sans;
+    font-family: Modern Sans, Arial, sans-serif;
     font-weight: lighter;
     box-shadow: #161616 1px 1px 8px;
     padding: 10px;
@@ -200,14 +200,14 @@ input[type=text] {
     border: none;
     background:#524343;
     color: white;
-    font-family: Modern sans;
+    font-family: Modern sans, Arial, sans-serif;
     font-weight: lighter;
 }
   
   input[type=text]:focus {
     background-color:#524343;
     color: white;
-    font-family: Modern sans;
+    font-family: Modern sans, Arial, sans-serif;
     font-weight: lighter;
     outline: none;
   }
@@ -215,15 +215,8 @@ input[type=text] {
 
 b{
       color: white;
-      font-family: Modern sans;
+      font-family: Modern sans, Arial, sans-serif;
       font-weight: lighter;
   }
 
   
-  
-  /* Change styles for cancel button and signup button on extra small screens */
-  @media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
-      width: 100%;
-    }
-  }
